@@ -53,3 +53,51 @@ Compatility testing
 Installation testing
 Usability testing
 Security testing
+![test level](https://user-images.githubusercontent.com/42009214/43596548-99a1f560-964d-11e8-93ad-2a3455d2be03.png)
+
+### SDLC/STLC
+![sdlc](https://user-images.githubusercontent.com/42009214/43596553-9bf6301a-964d-11e8-942b-eeadda7aa3d2.jpg)
+Test strategy vs test planning
+test strategy – high level (PM)
+### Test plan (test lead or test manager)
+scope, approach, schedule and resource
+define roles and responsibilities; schedule; environment prepar4, risks and acceptance criteria
+* test plan identifier
+* introduction
+* test item
+* **IN/OUT scope**
+* approach
+* **entry/exit criteria**
+entry criteria: business environment, requirement finalized; unit test pass
+exit criteria: no severity 1 and severity 2 defect
+* test deliverables
+* testing task
+* environment needs
+* responsibilities
+* staffing and training
+* schedule
+* risk
+* approval
+### Test case 
+* **test case ID**
+* test scenario
+* test case description
+* **test actions**
+* prerequisite
+* **expected result**
+* test parameters
+* **actually results**
+* environment information
+* comment
+### Defect management
+* priority
+* severity
+### DLC
+* new
+* assigned
+* test
+* verified
+* closed
+* reopened
+* deferred
+* rejected
