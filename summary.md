@@ -106,14 +106,19 @@ exit criteria: no severity 1 and severity 2 defect
 
 ### OLTP vs OLAP
 #### OLTP (on line transaction processing)
-* fast query
+* relatively standardized and simple query, fast 
 * multi-access
-* normalized
+* normalized with many table; joins
+* operational data
+* short and fast insert and updates
 #### OLAP (on line analytical processing)
 * aggregated, historical data
 * multi-demensional schemas  
   * star schema - denormalized dimension tables to describe data aggregated in a fact table.
   * snow flake schema - normalized dimension tables to describe data aggregated in a fact table
-* 
-* 
+* integrated different sources (OLTP)
+* denormalized
+* periodic long-running batch jobs
+* complex query involving aggregations
 ![star snow flake schema](https://user-images.githubusercontent.com/42009214/43649955-7ff07dca-970c-11e8-9703-a76a17277e1c.jpg)
+
