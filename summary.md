@@ -101,3 +101,15 @@ exit criteria: no severity 1 and severity 2 defect
 * reopened
 * deferred
 * rejected
+### OLTP vs OLAP
+#### OLTP (on line transaction processing)
+* fast query
+* multi-access
+* normalized
+#### OLAP (on line analytical processing)
+* aggregated, historical data
+* multi-demensional schemas  
+  * star schema - denormalized dimension tables to describe data aggregated in a fact table.
+  * snow flake schema - normalized dimension tables to describe data aggregated in a fact table
+* 
+* 
