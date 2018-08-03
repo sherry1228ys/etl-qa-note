@@ -101,6 +101,9 @@ exit criteria: no severity 1 and severity 2 defect
 * reopened
 * deferred
 * rejected
+### Dimesion vs Fact table
+
+
 ### OLTP vs OLAP
 #### OLTP (on line transaction processing)
 * fast query
@@ -113,3 +116,4 @@ exit criteria: no severity 1 and severity 2 defect
   * snow flake schema - normalized dimension tables to describe data aggregated in a fact table
 * 
 * 
+![star snow flake schema](https://user-images.githubusercontent.com/42009214/43649955-7ff07dca-970c-11e8-9703-a76a17277e1c.jpg)
