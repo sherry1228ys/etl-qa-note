@@ -102,7 +102,7 @@ exit criteria: no severity 1 and severity 2 defect
 * deferred
 * rejected
 ### Dimesion vs Fact table
-
+![dimension fact table](https://user-images.githubusercontent.com/42009214/43650817-c6524a94-970e-11e8-94ad-4989e361e854.jpeg)
 
 ### OLTP vs OLAP
 #### OLTP (on line transaction processing)
