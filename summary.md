@@ -121,4 +121,30 @@ exit criteria: no severity 1 and severity 2 defect
 * periodic long-running batch jobs
 * complex query involving aggregations
 ![star snow flake schema](https://user-images.githubusercontent.com/42009214/43649955-7ff07dca-970c-11e8-9703-a76a17277e1c.jpg)
+## ETL
+Data is extracted from OLTP database, or non-OLTP system, transformed to match the data warehouse schema and loaded into data warehouse database
+### Extraction
+#### Source: how to verify source files 
+* Business
+  * mortgate
+  * credit card information
+  * CIF (customer information)
+  and so on
+* IT 
+  * flat file: 
+    * file name validation (name convention):
+      * header information: meaning of field (business)
+      * Trailer information: filename|transaction date|total count of records|schema change Y/N
+      * "bcr" -- control file, a small binary file that is part of an Oracle database. The control file is used to keep             track of the database's status and physical structure.
+    * how to find the file (ls, cd, find, locate, grep, pwd, cat, >, >>)
+    * extract attrubutes
+        * frequency -- daily, monthly, bi-weekly
+        * delta/full: delta -- update/new data compared to the previous data; full snapshot-- all historical data
+     * delimiter (csv - comma seperated value) "," or "pipe". command: cut -d" " -f 1 file.txt; cut -c 1-7 file.txt; cut -b       1,2,5 file.txt // sed -n '2p' file.txt; sed -n '10,33p' file.txt
+     * fixed length
+  
+  * json
+  * xml
+  * ebcidic
+  * RDBMS
 
