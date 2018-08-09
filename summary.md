@@ -132,19 +132,26 @@ Data is extracted from OLTP database, or non-OLTP system, transformed to match t
   and so on
 * IT 
   * flat file: 
-    * file name validation (name convention):
+    * file name validation (name convention), also size of the file:
       * header information: meaning of field (business)
-      * Trailer information: filename|transaction date|total count of records|schema change Y/N
+      * Trailer information: filename|transaction date|total count of records|schema change Y/N -- count validation
       * "bcr" -- control file, a small binary file that is part of an Oracle database. The control file is used to keep             track of the database's status and physical structure.
     * how to find the file (ls, cd, find, locate, grep, pwd, cat, >, >>)
+    * column length, data type
     * extract attrubutes
         * frequency -- daily, monthly, bi-weekly
         * delta/full: delta -- update/new data compared to the previous data; full snapshot-- all historical data
      * delimiter ","-csv or "pipe", or tab . command: cut -d" " -f 1 file.txt; cut -c 1-7 file.txt; cut -b 1,2,5 file.txt 
         // sed -n '2p' file.txt; sed -n '10,33p' file.txt
      * fixed length
+     * null -- left join
+     * duplicate -- group by,having
+     * constrain -- PK, FK
   
   * json
+    * notepad++ json plugin
+    * object: {key1: value, key2: value}
+    * array: [value, value]
   * xml
   * ebcidic
   * RDBMS
