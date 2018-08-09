@@ -148,11 +148,14 @@ Data is extracted from OLTP database, or non-OLTP system, transformed to match t
      * duplicate -- group by,having
      * constrain -- PK, FK
   
-  * json
+  * json -- javascript object notation
     * notepad++ json plugin
     * object: {key1: value, key2: value}
     * array: [value, value]
-  * xml
-  * ebcidic
+  * xml -- extensible markup language
+    * <string> ...</string>
+    * notepad++ plugin -- by providing .xsd, the schema of xml can be validated
+  * ebcidic -- Extended Binary Coded Decimal Interchange Code
+    * copybook, record editor
   * RDBMS
 
