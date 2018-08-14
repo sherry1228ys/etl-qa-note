@@ -182,7 +182,7 @@ Data is extracted from OLTP database, or non-OLTP system, transformed to match t
  * data accuracy
  * data transformation: sql -- transformation rule
  * data quality: syntax -- invalid characters, upper lower case; reference test -- number check, date check, null check
- * incremental ETL: data integraty of old and new data
+ * incremental ETL: data integraty of old and new data -- source minus target and target minus source
  * GUI/navigation
  ### Level of ETL testing
  * **ETL process is executed successfully**
