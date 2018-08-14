@@ -178,6 +178,7 @@ Data is extracted from OLTP database, or non-OLTP system, transformed to match t
   ![etl process](https://user-images.githubusercontent.com/42009214/44102327-68fa3a8a-9fb7-11e8-96e1-58df14340540.jpg)
  ### Types of etl testing
  * meta data: data type; data length; index; constrain
+ * constrain: NOT NULL; UNIQUE; PK; FK; Default; NULL
  * source to target validation: data values transformed to expected data value
  * data accuracy
  * data transformation: sql -- transformation rule
@@ -189,3 +190,11 @@ Data is extracted from OLTP database, or non-OLTP system, transformed to match t
  * **Table schema is correct based on requirement**
  * **Total count matches source table(with source qualifier) and target table**
  * **Test the sample data match between source and target table(full data or spot check)**
+ #### SCD2 -- slow change dimesion type2
+creating another demesion record. all history of dimension changes is kept in the database. You capture attribute change by adding a new row with a new surrogate key to the dimension table. Both the prior and new rows contain as attributes the natural key(or other durable identifier). Also 'effective date' and 'current indicator' columns are used in this method. There could be only one record with current indicator set to 'Y'. For 'effective date' columns, i.e. start_date and end_date, the end_date for current record usually is set to value 9999-12-31.
+#### testing of SCD2
+* verify current data
+delta data: distinguish new data and update data (EXCEPT)
+* verify uniqueness of the key columns in dimension table: duplicate check
+* verify historical data is preserved and new records are getting created
+
