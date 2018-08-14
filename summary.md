@@ -19,7 +19,7 @@ NULL cannot be compared
 Index: divided data into buckets. Good performance
 ### DDL (data definition language) – define database struction or table
 * CREATE – CREATE DATABASE databasename; CREATE TABLE tablename (column1 datatype, column2 datatype, ...columnN datatype, PRIMARY KEY (columnname));
-* ALTER – AlTER TABLE tablename ADD/DROP/MODIFY columnname datatype; ALTER TABLE tablename MODIFY columnname datatype NOT NULL;
+* ALTER – ALTER TABLE tablename ADD/DROP/MODIFY columnname datatype; ALTER TABLE tablename MODIFY columnname datatype NOT NULL;
 * DROP – DROP TABLE tablename
 * TRUNCATE – delete table space
 * RENAME
@@ -169,3 +169,10 @@ Data is extracted from OLTP database, or non-OLTP system, transformed to match t
   * integrated -- heterogeneous sources
   * time variant -- time period
   * non-volatile -- historical data
+  ### ETL testing five stages
+  * identifying data source
+  * data acquisition
+  * implement business logics and dimensional modelling
+  * build and populate data -- run ETL process
+  * build reports
+  
