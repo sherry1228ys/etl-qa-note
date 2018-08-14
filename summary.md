@@ -156,6 +156,16 @@ Data is extracted from OLTP database, or non-OLTP system, transformed to match t
     * <string> ...</string>
     * notepad++ plugin -- by providing .xsd, the schema of xml can be validated
   * ebcidic -- Extended Binary Coded Decimal Interchange Code
-    * copybook, record editor
+    * cobol copybook, record editor
+    * mainly used on IBM mainframe
   * RDBMS
-
+    * fields; data type
+    * duplicate: group by , having
+    * left join: check NULL
+    * union; union all
+    * constrains: PK, FK, NULL
+  ### Data warehouse
+  * subject oriented -- modelling and analysis
+  * integrated -- heterogeneous sources
+  * time variant -- time period
+  * non-volatile -- historical data
