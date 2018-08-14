@@ -175,4 +175,17 @@ Data is extracted from OLTP database, or non-OLTP system, transformed to match t
   * implement business logics and dimensional modelling
   * build and populate data -- run ETL process
   * build reports
-  
+  ![etl process](https://user-images.githubusercontent.com/42009214/44102327-68fa3a8a-9fb7-11e8-96e1-58df14340540.jpg)
+ ### Types of etl testing
+ * meta data: data type; data length; index; constrain
+ * source to target validation: data values transformed to expected data value
+ * data accuracy
+ * data transformation: sql -- transformation rule
+ * data quality: syntax -- invalid characters, upper lower case; reference test -- number check, date check, null check
+ * incremental ETL: data integraty of old and new data
+ * GUI/navigation
+ ### Level of ETL testing
+ * **ETL process is executed successfully**
+ * **Table schema is correct based on requirement**
+ * **Total count matches source table(with source qualifier) and target table**
+ * **Test the sample data match between source and target table(full data or spot check)**
