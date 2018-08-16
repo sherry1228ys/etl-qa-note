@@ -218,7 +218,7 @@ Open-source framework that was created to make it easier to work with big data. 
   * Map API performs transform: Input data given to mapper is processed through user defined function written at mapper. All     the required complex business logic is implemented at the mapper level so that heavy processing is done by the mapper in     parallel as the number of mappers is much more than the number of reducers. Mapper generates an output which is             intermediate data and this output goes as input to reducer.
   * Reduce API performs aggregation: This intermediate result is then processed by user defined function written at             reducer and final output is generated. Usually, in reducer very light processing is done. This final output is stored       in HDFS and replication is done as usual.
  
- ![mapreduce](https://user-images.githubusercontent.com/42009214/44183894-e760de00-a0da-11e8-81b7-06b4690f17bb.jpg)
+![mapreduceexample](https://user-images.githubusercontent.com/42009214/44184139-0318b400-a0dc-11e8-9470-4ae75b08592d.jpg)
 
 * YARN -- resource management layer
 * Hadoop common
