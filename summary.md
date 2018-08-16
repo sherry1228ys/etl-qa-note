@@ -198,3 +198,17 @@ delta data: distinguish new data and update data (EXCEPT)
 * verify uniqueness of the key columns in dimension table: duplicate check
 * verify historical data is preserved and new records are getting created
 
+### BIG data
+#### Hadoop
+Open-source framework that was created to make it easier to work with big data. It provides a method to access data that is distributed among multiple clustered computers, process the data, and manage resources across the computing and network resources that are involved. 
+
+* Map reduce
+* HDFS - Hadoop distributed file system
+  * Namenode -- master machine. control metadata for the clusters
+  * Datanode -- slavenode; 
+  * **distributed**
+  * **replicate/failure tolerant**
+  * scalability
+  * space
+* YARN
+* Hadoop common
