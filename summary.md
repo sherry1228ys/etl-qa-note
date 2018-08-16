@@ -213,6 +213,12 @@ Open-source framework that was created to make it easier to work with big data. 
   * command: cd /usr/local/hadoop/sbin => ./start -all.sh => hdfs dfs –ls / or hadoop fs -ls / ;
      hadoop fs –cat ./file.txt; hadoop fs –put -f ./localfile.txt /home/matthew/remotefile.txt; hadoop fs -get                    /home/matthew/remotefile.txt ./local/file/path/file.txt
 * **Map reduce** -- batch processing engine
-  
+  * MapReduce is a programming model designed for processing large volumes of data in parallel by dividing the work into a      set of independent tasks.  
+  * two sub component: API for writing MapReduce workflow; a set of services for execute these workflow
+  * Map API performs transform: Input data given to mapper is processed through user defined function written at mapper. All     the required complex business logic is implemented at the mapper level so that heavy processing is done by the mapper in     parallel as the number of mappers is much more than the number of reducers. Mapper generates an output which is             intermediate data and this output goes as input to reducer.
+  * Reduce API performs aggregation: This intermediate result is then processed by user defined function written at             reducer and final output is generated. Usually, in reducer very light processing is done. This final output is stored       in HDFS and replication is done as usual.
+ 
+ ![mapreduce](https://user-images.githubusercontent.com/42009214/44183894-e760de00-a0da-11e8-81b7-06b4690f17bb.jpg)
+
 * YARN -- resource management layer
 * Hadoop common
