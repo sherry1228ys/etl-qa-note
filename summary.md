@@ -223,4 +223,10 @@ Open-source framework that was created to make it easier to work with big data. 
 
 * YARN -- resource management layer
 * Hadoop common
+#### Hive
+* Hive is a data warehouse infrastructure tool to process structured data in Hadoop. It resides on top of Hadoop to           summarize Big Data, and makes querying and analyzing easy. It is a platform used to develop SQL script to do mapreduce job
+* stores schema in a database, or metadata of tables, database, and processed data into HDFS (relational databased stored in    edgenode)
+* it is not database
+* HiveQL process engine-- instead of writing MapReduce in Java, write sql for MapReduce job
+* Execution engine
 
