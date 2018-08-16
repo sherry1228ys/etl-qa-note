@@ -204,8 +204,9 @@ Open-source framework that was created to make it easier to work with big data. 
 
 
 * **HDFS - Hadoop distributed file system**
-  * Namenode -- master machine. control metadata for the clusters
-  * Datanode -- slavenode; 
+  * Namenode -- master machine. control metadata for the clusters. HDFS, CLIENT, Resource manager, Hive Server, Hive                          metastore, Oozie server， Zookeeper server, Spark Master, YARN...
+  * Datanode -- slave; 
+  * Edge node: gateway nodes. interface between Hadoop and outside network. used to run client applicatoin.
   * **distributed**: data is stored in a distributed manner in HDFS across the cluster, data is processed parallel on a                         cluster of nodes
   * **replicate/failure tolerant**: data can be duplicated across multiple datanodes to protect agaginst machine failures.                                    (3 replicas)
   * scalability
@@ -222,3 +223,4 @@ Open-source framework that was created to make it easier to work with big data. 
 
 * YARN -- resource management layer
 * Hadoop common
+
