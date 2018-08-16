@@ -230,3 +230,20 @@ Open-source framework that was created to make it easier to work with big data. 
 * HiveQL process engine-- instead of writing MapReduce in Java, write sql for MapReduce job
 * Execution engine
 
+![hive](https://user-images.githubusercontent.com/42009214/44215039-85868f80-a13f-11e8-9fa7-b3e7bae2904a.jpg)
+
+**command**
+* hive
+* show database; or show database like '*abc*'
+* use database
+* show tables; or show tables like '*abc*'
+* show partitions table
+* desc table_name; or desc formatted table_name; or desc extended table_name -- check the detailed information of the table
+* CREATE TABLE table_name (schema) ROW FORMAT DELIMITED FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\n' STORES AS textfile LOCATIION ''
+* load data local inpath 'path' overwrite into table table_name
+
+##### managed table vs external table
+* managed table: both data and schema(metadata) in control of hdfs.
+* external table: only schema is under control of hdfs.
+when drop external table, it is deleted in the database(mysql), but it is still in hive.
+##### mapjoin vs reduce join
