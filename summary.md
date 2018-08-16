@@ -202,13 +202,17 @@ delta data: distinguish new data and update data (EXCEPT)
 #### Hadoop
 Open-source framework that was created to make it easier to work with big data. It provides a method to access data that is distributed among multiple clustered computers, process the data, and manage resources across the computing and network resources that are involved. 
 
-* Map reduce
-* HDFS - Hadoop distributed file system
+
+* **HDFS - Hadoop distributed file system**
   * Namenode -- master machine. control metadata for the clusters
   * Datanode -- slavenode; 
-  * **distributed**
-  * **replicate/failure tolerant**
+  * **distributed**: data is stored in a distributed manner in HDFS across the cluster, data is processed parallel on a                         cluster of nodes
+  * **replicate/failure tolerant**: data can be duplicated across multiple datanodes to protect agaginst machine failures.                                    (3 replicas)
   * scalability
-  * space
-* YARN
+  * space -- add more datanodes and rebalance
+  * command: cd /usr/local/hadoop/sbin => ./start -all.sh => hdfs dfs –ls / or hadoop fs -ls / ;
+     hadoop fs –cat ./file.txt; hadoop fs –put -f ./localfile.txt /home/matthew/remotefile.txt; hadoop fs -get                    /home/matthew/remotefile.txt ./local/file/path/file.txt
+* **Map reduce** -- batch processing engine
+  
+* YARN -- resource management layer
 * Hadoop common
